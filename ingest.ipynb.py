@@ -70,4 +70,4 @@ game_data.head(10)
 
 # COMMAND ----------
 
-game_data.write.saveAsTable("Raw_Phasmophobia_Table")
+game_data.write.mode("overwrite").saveAsTable("Raw_Phasmophobia_Table")

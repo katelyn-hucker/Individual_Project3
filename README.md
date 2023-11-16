@@ -3,8 +3,8 @@
 
 ### Project Overview:
 Three databricks notebooks which each perform ETL (Extract, Transform, Load) operations, and are then pushed to this github repo. I use of Delta Lake for data storage. This takes advantage of delta lake's capabilities of selective overwriting based on filters and partitions. We can also manually or automatically update your table schema without rewriting data with the data in a delta lake. I use Spark SQL for data transformations, like dropping unnecessary columns and removing null values. I have proper error handling and data validation, by having my code run through github actions. The data is also checked for table existance in every stage. This pipeline is triggered every Monday morning at 8AM EST. 
-	
 
+ Here is a video walking through my project : [Click](https://youtu.be/SBbVlASNLwE)
  ### ETL in Databricks Notebooks:
  #### Extract:
  In these two images you see the 'ingest' notebook in the databricks workflow screen loading in data about the game, Phasmophobia. The notebook saves this as a "raw_phasmophobia_table." The two images below show the start and end of the notebook, respectively.
@@ -40,4 +40,4 @@ Three databricks notebooks which each perform ETL (Extract, Transform, Load) ope
 ![image](https://github.com/katelyn-hucker/Individual_Project3/assets/143521756/86c150e9-6cf7-4561-99bb-fd6e22a6cf21)
 	
 	
-Video Demo: A YouTube link in README.md showing a clear, concise walkthrough and demonstration of your ETL pipeline, including the automated trigger and recommendations to the management team.
+
